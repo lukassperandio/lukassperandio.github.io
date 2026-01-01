@@ -1,0 +1,17 @@
+:root {
+    --color-bg-light: #ffffff;
+    --color-text-light: #1f2937;
+    --color-primary: #ec4899;
+    --color-secondary: #6b7280;
+    --color-button-light: #e5e7eb;
+
+    --color-bg-dark: #111827;
+    --color-text-dark: #f3f4f6;
+    --color-button-dark: #374151;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+}
