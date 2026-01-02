@@ -79,3 +79,72 @@ body.dark-mode .header__nav a {
 body.dark-mode .dark-mode-btn {
     background-color: var(--color-button-dark);
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    padding: 0.5rem;
+}
+
+body.dark-mode .menu-toggle {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg-light);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__logo img {
+        margin-top: .5em;
+    }   
+
+    .dark-mode-btn {
+        margin-bottom: .4em;
+    }
+
+    body.dark-mode .header__nav {
+        background-color: var(--color-bg-dark);
+    }
+
+    .header__nav.show {
+        display: flex;
+    }
+
+    .header__nav a {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .dark-mode-btn {
+        order: 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__nav a span {
+        font-size: .8em;
+    }
+
+    .header__nav a {
+        font-size: 1.5rem;
+        /* Ícones maiores */
+    }
+}
